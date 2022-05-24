@@ -1,0 +1,22 @@
+@import '../../sass/fonts';
+@import '../../sass/variables';
+
+.proyects__container {
+  margin-top: 5rem;
+  width: 100%;
+}
+.proyects__tittle {
+  font-size: $text-extra-large;
+  color: $color-white;
+  text-align: center;
+}
+.proyects__cards {
+  margin: 0 auto;
+  margin-top: 5rem;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}

@@ -1,0 +1,75 @@
+@import '../../sass/fonts';
+@import '../../sass/variables';
+
+.ProyectCard {
+  min-height: 18rem;
+  min-width:27rem;
+  width: 27rem;
+  height: 18rem;
+  background-color: white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 0 1rem;
+}
+.proyect-card__container {
+  padding: 1rem 2rem;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: $color-gray-dark;
+  background-color: rgba(41, 37, 37, 0.863);
+  opacity: 0;
+  transition: all 200ms;
+  position: relative;
+}
+.proyect-card__container:hover {
+  opacity: 1;
+}
+.proyect-card__container h3 {
+  display: none;
+  color: $color-white;
+  font-size: $text-regular;
+  text-align: center;
+  transition: display 300ms;
+}
+.proyect-card__container:hover h3{
+  display: block;
+}
+.proyect-card__container p {
+  display: none;
+  margin-top: 1rem ;
+  color: $color-white;
+  font-size: $text-small;
+  text-align: center;
+  transition: display 300ms;
+}
+.proyect-card__container:hover p{
+  display: block;
+}
+.proyect-card__links {
+  height: 2rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (min-width:550px) {
+  .ProyectCard{
+  width: 32rem;
+  height: 23rem;
+  }
+  .proyect-card__container h3{
+    font-size: $text-large;
+  }
+  .proyect-card__container p {
+    font-size: $text-regular;
+  }
+}

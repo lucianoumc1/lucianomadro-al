@@ -1,0 +1,22 @@
+@import '../../sass/variables';
+
+.social-media__container ul {
+  display: flex;
+  list-style: none;
+  margin: 0 2rem;
+}
+
+.social-media__container ul li {
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.social-media__container ul li a {
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+
+.social-media__container ul li:hover {
+  background-color: $color-gray-ligth;
+}

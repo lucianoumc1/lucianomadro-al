@@ -1,0 +1,98 @@
+@import '../../sass/variables';
+@import '../../sass/fonts';
+
+.say-hello__container {
+  width: 100vw;
+  margin-top: 10rem;
+  background-color: $color-background-base;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.say-hello__content {
+  width: 90%;
+  height: 80%;
+  max-width: 1300px;
+  background-color: $color-gray-dark;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.say-hello__description {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+  max-width: 400px;
+}
+
+.say-hello__description h2 {
+  color: white;
+  font-size: 8rem;
+  font-weight: 500;
+  position: absolute;
+  top: -8rem;
+  left: 0;
+}
+
+.say-hello__email {
+  color: $color-white;
+  font-size: 4rem;
+  word-wrap: break-word;
+  margin: 2rem 0;
+}
+
+.break-line {
+  display: block;
+  width: 6rem;
+  border-radius: 10px;
+  height: 3px;
+  background-color: $color-white;
+}
+
+.say-hello__content p {
+  margin: 2rem 0;
+  color: $color-white;
+  font-size: $text-regular;
+  line-height: 3.2rem;
+  max-width: 400px;
+
+  &.author--name {
+    margin: 0;
+    font-weight: 600;
+  }
+
+  &.author--from {
+    margin: 0;
+    font-size: $text-regular - .3rem;
+    font-weight: 600;
+    margin-bottom: 5rem;
+  }
+}
+
+.say-hello__image--container {
+  display: none;
+  width: 50%;
+  background-image: url('../../assets/images/profile.jpg');
+  background-position: center;
+  background-repeat:no-repeat ;
+  background-size: cover;
+}
+
+@media (min-width: 550px) {
+  .say-hello__description h2 {
+    font-size: 120px;
+    top: -120px;
+  }
+  .say-hello__container {
+    margin-top: 20rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .say-hello__image--container {
+    display: block;
+  }
+}
